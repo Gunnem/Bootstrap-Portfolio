@@ -3,24 +3,44 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Matthew Kim/ About Me</title>
-	<link rel="stylesheet" href="./assets/css/reset.css">
-	<link rel="stylesheet" href="./assets/css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
+
+
+
 <body>
 
 	<header>
-		<div class="container">
-			<div class="name">
-				<div class="logo">Matthew Kim</div>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="d-flex flex-grow-1">
+				<span class="w-100 d-lg-none d-block"><!-- hidden spacer to center brand on mobile --></span>
+				<a class="navbar-brand d-none d-lg-inline-block" href="#">
+					Matthew Kim
+				</a>
+				<a class="navbar-brand-two mx-auto d-lg-none d-inline-block" href="#">
+					<img src="//placehold.it/40?text=LOGO" alt="logo">
+				</a>
+				<div class="w-100 text-right">
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+				</div>
 			</div>
-			<nav class="nav">
-				<ul>
-					<li><a href="#" class="active">About</a></li>
-					<li><a href="portfolio.html">Portfolio</a></li>
-					<li><a href="contact.html">Contact</a></li>
+			<div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
+				<ul class="navbar-nav ml-auto flex-nowrap">
+					<li class="nav-item">
+						<a href="#" class="nav-link m-2 menu-item">About</a>
+					</li>
+					<li class="nav-item">
+						<a href="portfolio.html" class="nav-link m-2 menu-item">Portfolio</a>
+					</li>
+					<li class="nav-item">
+						<a href="contact.html" class="nav-link m-2 menu-item">Contact</a>
+					</li>
 				</ul>
-			</nav>
-		</div>
+			</div>
+		</nav>
 	</header>
 	
 	<div class="content">
