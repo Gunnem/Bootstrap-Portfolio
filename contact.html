@@ -3,47 +3,135 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Matthew Kim/ About Me</title>
-	<link rel="stylesheet" href="./assets/css/reset.css">
-	<link rel="stylesheet" href="./assets/css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
+
 <body>
 
-	<header>
-		<div class="container">
-			<div class="name">
-				<div class="logo">Matthew Kim</div>
-			</div>
-			<nav class="nav">
-				<ul>
-					<li><a href="index.html">About</a></li>
-					<li><a href="portfolio.html">Portfolio</a></li>
-					<li><a href="#" class="active">Contact</a></li>
-				</ul>
-			</nav>
-		</div> 
-	</header>
-	
-	<div class="content">
-		
-		<div class="main">
-			<h1 class="page-title">Contact</h1>
-			<form action="#" class="contact">
-				<label for="name">Name</label>
-				<input type="text" name="name" id="name" placeholder="Saul Goodman">
-				<label for="email">Email</label>
-				<input type="text" name="email" id="email" placeholder="youremail@youremail.com">
-				<label for="name">Message</label>
-				<textarea rows="10" cols="40" name="message" id="message"></textarea>
-				<input type="submit" value="Submit">
-			</form>	
+		<header>
+				<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+					<div class="d-flex flex-grow-1">
+						<span class="w-100 d-lg-none d-block"><!-- hidden spacer to center brand on mobile --></span>
+						<a class="navbar-brand d-none d-lg-inline-block" href="#">
+									Matthew Kim
+						</a>
+						<a class="navbar-brand-two mx-auto d-lg-none d-inline-block" href="#">
+									Matthew Kim
+						</a>
+						<div class="w-100 text-right">
+							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+						</div>
+					</div>
+					<div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
+						<ul class="navbar-nav ml-auto flex-nowrap">
+							<li class="nav-item">
+								<a href="index.html" class="nav-link m-2 menu-item">About</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link m-2 menu-item">Portfolio</a>
+							</li>
+							<li class="nav-item">
+								<a href="contact.html" class="nav-link m-2 menu-item">Contact</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</header>
 
-		
-		
-	</div> 
+<div class="container">
+  <form>
+    <h2>Contact</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="first">First Name</label>
+          <input type="text" class="form-control" placeholder="" id="first">
+        </div>
+      </div>
+      <!--  col-md-6   -->
 
-	<footer>
-		&copy; Copyright 2018 Matthew Kim
-	</footer>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="last">Last Name</label>
+          <input type="text" class="form-control" placeholder="" id="last">
+        </div>
+      </div>
+      <!--  col-md-6   -->
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="company">Company</label>
+          <input type="text" class="form-control" placeholder="" id="company">
+        </div>
+
+      </div>
+      <!--  col-md-6   -->
+
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" class="form-control" id="phone" placeholder="phone">
+        </div>
+      </div>
+      <!--  col-md-6   -->
+    </div>
+    <!--  row   -->
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="email">
+        </div>
+      </div>
+      <!--  col-md-6   -->
+
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="url">Your Website <small>Please include http://</small></label>
+          <input type="url" class="form-control" id="url" placeholder="url">
+        </div>
+      </div>
+      <!--  col-md-6   -->
+    </div>
+    <!--  row   -->
+
+    <label for="contact-preference">When is the best time of day to reach you?</label>
+    <div class="radio">
+      <label>
+        <input type="radio" name="contact-preference" id="contact-preference" value="am" checked>Morning
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="contact-preference" id="contact-preference" value="pm" checked>Evening
+      </label>
+    </div>
+
+    <label for="newsletter">Would you like to recieve my email newsletter?</label>
+    <div class="checkbox">
+
+      <label>
+        <input type="checkbox" value="Sure!" id="newsletter"> Sure!
+      </label>
+    </div>
+
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+
+<div class="p-3 mb-2 bg-dark text-white">	
+	<div class="col-md text-md-center">
+		<h6>&copy; Copyright 2018 Matthew Kim</h6>
+	</div>
+</div>	
 
 </body>
 </html>
